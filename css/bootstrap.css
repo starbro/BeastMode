@@ -4955,6 +4955,13 @@ a.badge:focus {
 .list-group-item > .badge + .badge {
   margin-right: 5px;
 }
+
+.list-group-item.green > .badge,
+.nav-pills > .green > a > .badge {
+  background-color: black;
+  color: #337ab7;
+}
+
 .nav-pills > li > a > .badge {
   margin-left: 3px;
 }
