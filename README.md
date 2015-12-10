@@ -1,4 +1,6 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [SB Admin](http://startbootstrap.com/template-overviews/sb-admin/)
+# BLOCKBUSTER OR BUST
+
+Welcome to the CS109 final project for Stephen Albro, Alpkaan Celik, Jason Dong and Jessica Li! In this repository you will find our project notebook - [Final_Project_vFINAL.ipynb](./Final_Project.ipynb)
 
 [SB Admin](http://startbootstrap.com/template-overviews/sb-admin/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
