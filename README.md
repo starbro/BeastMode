@@ -1,6 +1,17 @@
 # BLOCKBUSTER OR BUST
 
-Welcome to the CS109 final project for Stephen Albro, Alpkaan Celik, Jason Dong and Jessica Li! In this repository you will find our project notebook - [Final_Project_vFINAL.ipynb](./Final_Project.ipynb)
+Welcome to the CS109 final project for Stephen Albro, Alpkaan Celik, Jason Dong and Jessica Li! 
+Access our website here - [Blockbuster or Bust](http://google.com)
+Access our screencast video here - [Blockbuster or Bust Video](http://google.com)
+
+In this repository you will find our process project book - [Process_book.ipynb](./Process_book.ipynb). 
+This process book explains:
+* Overview and motivation for our project
+* Initial quesitons that we were looking to answer
+* Our original attempt to answer this question is referred to in this process book, and can be found in the notebook [Project_attempt_1.ipynb](./Project_attempt_1.ipynb)
+* Data analysis and decision making process
+
+There are also a number of other files in the repository
 
 [SB Admin](http://startbootstrap.com/template-overviews/sb-admin/) is an open source, admin dashboard template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
 
