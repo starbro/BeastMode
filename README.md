@@ -1,10 +1,10 @@
 # BLOCKBUSTER OR BUST
 
-Welcome to the CS109 final project for Stephen Albro, Alpkaan Celik, Jason Dong and Jessica Li! 
-Access our website here - [Blockbuster or Bust](http://google.com)
+Welcome to the CS109 final project for Stephen Albro, Alpkaan Celik, Jason Dong and Jessica Li! <br>
+Access our website here - [Blockbuster or Bust](http://google.com) <br>
 Access our screencast video here - [Blockbuster or Bust Video](http://google.com)
 
-In this repository you will find our process project book - [Process_book.ipynb](./Process_book.ipynb). 
+In this repository you will find our process project book - [Process_book.ipynb](./Process_book.ipynb). <br>
 This process book explains:
 * Overview and motivation for our project
 * Initial quesitons that we were looking to answer
