@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blockbuster or Bust</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="overrides.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="wrapper">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <!-- Top Menu Items -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Blockbuster or Bust</a>
+        </div>
+        <ul class="nav navbar-right top-nav">
+          <!-- Process Book -->
+          <li class="dropdown">
+              <a href="final.html"><i class="fa fa-book"></i> Process Book<b></b></a>
+          </li>
+          <!-- Process Book -->
+          <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-files-o"></i>Old Files<b class="caret"></b></a>
+              <ul class="dropdown-menu message-dropdown">
+                  <li class="message-preview">
+                      <a href="https://github.com/starbro/BeastMode" target="_blank">
+                          <div class="media">
+                              <span class="pull-left">
+                                  <img class="media-object" src="images/github.png" width="50px" height="50px" alt="">
+                              </span>
+                              <div class="media-body">
+                                  <h5 class="media-heading"><strong>Git Hub</strong>
+                                  </h5>
+                                  <p>All files for this project are available on Github.</p>
+                              </div>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="message-preview">
+                      <a href="take_one.html" target="_blank">
+                          <div class="media">
+                              <span class="pull-left">
+                                  <img class="media-object" src="images/ipy.png" width="50px" height="50px" alt="">
+                              </span>
+                              <div class="media-body">
+                                  <h5 class="media-heading"><strong>Old Process Book</strong>
+                                  </h5>
+                                  <p>This contains our data gathering and analysis before we decided to gather new data.</p>
+                              </div>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="message-preview">
+                      <a href="IMDB_reviews.html" target="_blank">
+                          <div class="media">
+                              <span class="pull-left">
+                                  <img class="media-object" src="images/ipy.png" width="50px" height="50px" alt="">
+                              </span>
+                              <div class="media-body">
+                                  <h5 class="media-heading"><strong>Loading IMDB Notebook</strong>
+                                  </h5>
+                                  <p>This file contains code for loading and organizing Andrew Maas's IMDB data set into a pandas Data Frame.</p>
+                              </div>
+                          </div>
+                      </a>
+                  </li>
+                  <li class="message-preview">
+                      <a href="https://github.com/starbro/BeastMode" target="_blank">
+                          <div class="media">
+                              <span class="pull-left">
+                                  <img class="media-object" src="images/imdb_icon.png"  width="50px" height="50px" alt="">
+                              </span>
+                              <div class="media-body">
+                                  <h5 class="media-heading"><strong>Large Movie Review Data Set</strong>
+                                  </h5>
+                                  <p>This contains a link to our GitHub Page which has Andrew Maas's IMDB data set.</p>
+                              </div>
+                          </div>
+                      </a>
+                  </li>
+              </ul>
+          </li>
+        </ul>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav side-nav">
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Overview</a>
+                </li>
+                <li>
+                    <a href="methods.html"><i class="fa fa-fw fa-table"></i> Methods</a>
+                </li>
+                <li>
+                    <a href="results.html"><i class="fa fa-fw fa-bar-chart-o"></i> Results</a>
+                </li>
+                <li>
+                  <img src="images/mo.png" width=150% height="400px" >
+                <li>
+            </ul>
+        </div>
+      </nav>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Methods
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div>
+                    <h1 id="override-blue">Scraping and Data Collection</h1>
+                </div>
+                <div class="well">
+                    <p>Since our aim was to predict gross movie income from review sentiment, we needed a database of recent movies with their gross earnings. Box Office Mojo proved to be the right place. We scraped all Box Office Mojo's listed movies for each year (about 500 per year) from 1990-2015, and several of their attributes. Besides total gross income for opening weekend income, we also attained information about release dates, close dates, and yearly ranking. </p>
+                    <p>
+                    For each movie in the resulting table, we scraped imdb.com for 100 reviews corresponding to that movie. We ensured a wide range of reviews by sorting them in chronological order. Some movies had less than 100 reviews to offer, but several had many more. After 24 hours of scraping, our data set had half a million reviews corresponding to over 11,000 movies from the past 26 years.
+                    </p>
+                    <p>
+                    Below shows the Box Office Mojo movie table (left) alongside a standard IMDB review page (right).
+                    </p>
+                </div>
+                <img src="images/bom.png" width=45%>
+                <img src="images/imdb.png" width="45%">
+                <br>
+                <br>
+                <!-- METHOD -->
+                <div>
+                    <h1 id="override-green">Sentiment Scoring</h1>
+                </div>
+                <div class="well">
+                    <p>
+                    We needed a way to quantify sentiment, the feelings contained in a particular review.
+                    To do this we used labMT, or Language Assessment by Mechanical Turk, a word scoring list for sentiment analysis containing over 10,000 words available in the qdap Dictionaries package in R. Since the data was generated by Mechanical Turk, it contains an average "happiness" rating for each word. It also contains each words happiness rank (the highest being the word <i>laughter</i>), as well as happiness standard deviation.
+                    All happiness averages were positive, so we decided to make a table containing each word and its distance above or below the mean. Words below the mean are generally considered negative; words above the mean are  considered positive. Our happiness table ranged from about -4 to +4.
+                    </p>
+                    <p>
+                    Intuitively, not all words in a review will contain charged sentiments. The word <i>the</i> is an obvious example. Words like <i>the</i> probably do not appear in the labMT list, but as another cleaning step we decided to remove any left over boring words from our data. These are called <i>stop words</i> and are provided in Python's sklearn module.
+                    </p>
+                    <p>
+                    For each review in our movie data, we collected several different measurements of sentiment, or valence. First, we took the sum of the happiness scores of the words in the review, calling it <i>valence sum</i>. Second, we took the average valence across the review. Third, we calculate the percentage of words in the review that were scorable using our word list. This tells us how dense the review was in terms of interesting words. Lastly, we calculated the sheer number of scorable words.
+                    </p>
+                </div>
+                <br>
+                <!-- METHOD -->
+                <div>
+                    <h1 id="override-red">Bag of Words</h1>
+                </div>
+                <div class="well">
+                  <p>To add sensitivity to our analysis we use bag-of-words sentiment analysis on our movie review texts to see if we can better describe the text. In order to do this, we use the python library <i> patternize</i> to first tokenize the text into individual words. We lemmatize these words to convert words into their stem form e.g. “run”, “runs”, and “running” are reduced to the same lemma “run. Then we use the <i>Penn Treebank</i> to identify which parts-of-speech each word belongs to. From this, we are extract lists of the nouns and adjectives.</p>  
+
+                  <p>We are interested in the nouns because we can use them to find the topic of a sentence. Nouns have a clearer thematic signal than other parts of speech, therefore we consider them on a sentence level, where it is easier to distinguish topic. We use a bag of words to approach to predict the probability that an adjective has a positive sentiment. We then apply this naïve bayes classifier to the sentences within a review to determine whether they are positive or negative.</p>
+
+                  <p>The goal was to create a dataframe that had an average probability of positive sentiment for each topic, by movie. This would provide more nuanced sentiment analysis than the simplistic method above.</p>
+                </div>
+                <br>
+                <!-- METHOD -->
+                <div>
+                    <h1 id="override-orange">Clustering</h1>
+                </div>
+                <div class="well">
+                    <p>Before we conduct any statistical analysis on our data points, it makes sense to get a better understanding of its underlying structure.</p>
+                    <p>
+                    A neat way to discover these structures is to implement a Clustering Algorithm, which is a type of unsupervised learning analysis of texts. Using such methods, we can determine if there are any underlying statistical distributions in the population, such as a Gaussian, that is creating the patches of data we see in our sample. This method enables us to separate the dataset into meaningful chunks, and thus, we can determine which subsets of our data we should be running our regressions/classification on.
+
+                    The picture below shows that underneath the noise of the real world, our data regarding the relationship between sentiment and box office success are actually being created by three distinct Gaussian distributions.
+                    </p>
+                </div>
+                <img src="images/clustering.png" width=75% height=75%>
+                <br>
+                <!-- METHOD -->
+                <div>
+                    <h1 id="override-brown">Regression and Classification</h1>
+                </div>
+                <div class="well">
+                    <p>Our analysis involved estimating the opening gross of movies with various features we had including the average valence for reviews for given movies for topic 1 and topic 0 (from sentiment analysis) as well as sentiment scores derived from the LabMT dictionary.  We will use linear regression as well as other ensemble methods including SVM, decision tree, random forest, AdaBoost and GradientBoost. We will optimize these on training sets and test on testing sets, then selecting the best regressor with the highest accuracy score on the testing set.
+                    </p>
+                    <p>
+                    We are also interested in the classifying whether movies have are Blockbusters, defined by critics as grossing above 100 million. We divide our dataset into Blockbuster movies and not, then trying to classify whether movies using two main methods. First, we use what we know from average valence for topic 1 and 0 from our bag of words analysis to try to classify Blockbusters. We use five methods, namely, logistic regression, SVM, decision tree, AdaBoost and GradientBoost. The second method is using all features that we have and seeing to what extent we can classify Blockbusters. We use the classifiers from the first method with the addition of Random Forests. Lastly, we select for the best classifier by seeing it’s accuracy score on the test data.
+                    </p>
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blockbuster or Bust</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="overrides.css" rel="stylesheet">
+
+</head>
+<body>
+    <div id="wrapper">
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <!-- Top Menu Items -->
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html">Blockbuster or Bust</a>
+          </div>
+          <ul class="nav navbar-right top-nav">
+            <!-- Process Book -->
+            <li class="dropdown">
+                <a href="final.html"><i class="fa fa-book"></i> Process Book<b></b></a>
+            </li>
+            <!-- Process Book -->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-files-o"></i>Old Files<b class="caret"></b></a>
+                <ul class="dropdown-menu message-dropdown">
+                    <li class="message-preview">
+                        <a href="https://github.com/starbro/BeastMode" target="_blank">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="images/github.png" width="50px" height="50px" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>Git Hub</strong>
+                                    </h5>
+                                    <p>All files for this project are available on Github.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-preview">
+                        <a href="take_one.html" target="_blank">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="images/ipy.png" width="50px" height="50px" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>Old Process Book</strong>
+                                    </h5>
+                                    <p>This contains our data gathering and analysis before we decided to gather new data.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-preview">
+                        <a href="IMDB_reviews.html" target="_blank">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="images/ipy.png" width="50px" height="50px" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>Loading IMDB Notebook</strong>
+                                    </h5>
+                                    <p>This file contains code for loading and organizing Andrew Maas's IMDB data set into a pandas Data Frame.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="message-preview">
+                        <a href="https://github.com/starbro/BeastMode" target="_blank">
+                            <div class="media">
+                                <span class="pull-left">
+                                    <img class="media-object" src="images/imdb_icon.png"  width="50px" height="50px" alt="">
+                                </span>
+                                <div class="media-body">
+                                    <h5 class="media-heading"><strong>Large Movie Review Data Set</strong>
+                                    </h5>
+                                    <p>This contains a link to our GitHub Page which has Andrew Maas's IMDB data set.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+          </ul>
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav side-nav">
+                  <li class="active">
+                      <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Overview</a>
+                  </li>
+                  <li>
+                      <a href="methods.html"><i class="fa fa-fw fa-table"></i> Methods</a>
+                  </li>
+                  <li>
+                      <a href="results.html"><i class="fa fa-fw fa-bar-chart-o"></i> Results</a>
+                  </li>
+                  <li>
+                    <img src="images/mo.png" width=150% height="400px" >
+                  <li>
+              </ul>
+          </div>
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Results
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+                  <div class="well">
+                    <p>
+                      In this project, we were interested in to what extent we would predict opening gross for all movies released since 1990 recorded on Box Office Mojo with reviews information from IMDB. We also wanted to see to what extent we could successfully classify movies as Blockbuster or not. This is defined as grossing above 100M, as critics called Jaws the first Blockbuster because it was the first movie to gross above 100M. Lastly, throughout this entire process, we were also interested in seeing what new insights we could uncover about the movie industry. We shall share these with you below.
+                    </p>
+                  </div>
+                  <div>
+                      <h1 id="override-blue">Insights about Movie Industry</h1>
+                  </div>
+                 <div class="well">
+                    <p>Even after adjusting for inflation, we learned that there has been more block busters in recent years (after 2000) than from 1990-2000. We defined a block buster as a movie that made more money after inflation than Jaws (1975). <p>
+                    <img src="images/red_gross.png", width=45%>
+                    <img src="images/green_gross.png", width=45%>
+                  </div>
+                <div class="well">
+                  <p> We also discovered that until 2005, the number of theaters for movies had been increasing, at which point it started to plateau. </p>
+                </div>
+                <img src=images/plat.png width=60% height=60%>
+                  <div>
+                      <h1 id="override-green">Predicting Movie Grossing</h1>
+                  </div>
+                  <div class="well">
+                  <p>
+                      We used many different methods to see how we can best predict opening-gross of movies given the information that we have. The features that we will use are the following:
+                      <ol>
+                      <li> The number of theaters opening the film and the number of theater showing the film in total
+                      <li> The average valence scored from LabMT, the variance of this score and the absolute deviation of this valence from the mean
+                      <li> The average percentage of reviews of a given movie that have corresponding valence scores in LabMT
+                      <li> The valence of topic 1 and 0 as derived from our bag of words analysis and the maximum valence for these topics across all reviews for a given movie
+                    </ol>
+                  </p>
+                  </div>
+
+                <div class="well">
+                  <p>
+                    Here, we have also chosen not to predict movie grossings but specifically predict their opening weekend grossings because different movies are in theaters for different amounts of time, and we do not always know how long they are on show and thus we cannot correctly control for this variable.
+                  </p>
+                  <p>We split the dataset into training and testing, training our regressors on the former and seeing how well they perform on the latter. The six regressors that we use are as follows:
+                    <ol>
+                    	<li> Logistic regressor
+                      <li>	Support Vector Machine regressor
+                      <li>	Decision tree regressor
+                      <li>	AdaBoost regressor
+                      <li>	GradientBooster regressor
+                      <li>	Random Forest regressor
+                    </ol>
+                  </p>
+                </div>
+                <div class="well">
+                  <p>
+                    Here, we have also chosen not to predict movie grossings but specifically predict their opening weekend grossings because different movies are in theaters for different amounts of time, and we do not always know how long they are on show and thus we cannot correctly control for this variable.
+                  </p>
+                  <p>
+                  Through regression, we found that the most successful predictor is random forest, which has the highest accuracy scores on both the test and training datasets.</p>
+                </div>
+                <img src="images/class_table.png" width=60% height=60%>
+                <div>
+                    <h1 id="override-red">  Classifying movies as Blockbuster or not</h1>
+                </div>
+                <div class="well">
+                  <p>We are also interested in classifying whether movies are blockbusters or not, which is defined as having a grossing of over 100M, a Blockbuster.</p>
+
+                  <p>
+                  We first train our classifiers on two variables, our average valence scores for topic 1 and topic 0 from our bag of words analysis. The different classifiers that we use are the following:
+                  </p>
+                    <ol>
+                      <li> Logistic classifier
+                      <li> 	Support Vector Machine classifier
+                      <li> 	Decision tree classifier
+                      <li> 	AdaBoost classifier
+                      <li> 	GradientBooster classifier
+                    </ol>
+                  <p>
+                  We find that the predictive powers of these are very poor. This can be seen in the ROC curve below and poor contour plots below.
+                  </p>
+                </div>
+                  <img src="images/roc01.png" width=60% height=60%>
+                <div class="well">
+                  <p>We will also train classifiers on two other variables, namely average valence from LabMT and number of theaters showing film and compare the this with the prediction from the previous set of two variables. An example of a contour plot can be seen below.</p>
+                </div>
+                <img src="images/lab.png" width=60% height=60%>
+                <div class="well">
+                  <p>
+                    We see that all the classifiers have very similar accuracy scores so it is difficult to differentiate between which classifiers perform better. These two features have more predictive power than the previous two, which comes mostly from the feature for number of theaters. LabMT valence score lends very little predictive power.
+                  </p>
+                  <p>
+                    Lastly, we will train classifiers on a larger list of variables similar what we did for regression. For example, this will include other valence scores we've calculated using the LabMT dictionary, the variance of valence scores across reviews for a given movie and etc. In addition, we will be using Tree classifiers.
+                  </p>
+                  <p>
+                    Here, we again do not see a significant different between the classifiers. They are all quite accurate.
+                  </p>
+                </div>
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>

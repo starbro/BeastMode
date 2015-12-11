@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Blockbuster or Bust</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="overrides.css" rel="stylesheet">
+
+</head>
+<body>
+  <div id="wrapper">
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <!-- Top Menu Items -->
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Blockbuster or Bust</a>
+      </div>
+      <ul class="nav navbar-right top-nav">
+        <!-- Process Book -->
+        <li class="dropdown">
+            <a href="final.html"><i class="fa fa-book"></i> Process Book<b></b></a>
+        </li>
+        <!-- Process Book -->
+        <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-files-o"></i>Old Files<b class="caret"></b></a>
+            <ul class="dropdown-menu message-dropdown">
+                <li class="message-preview">
+                    <a href="https://github.com/starbro/BeastMode" target="_blank">
+                        <div class="media">
+                            <span class="pull-left">
+                                <img class="media-object" src="images/github.png" width="50px" height="50px" alt="">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="media-heading"><strong>Git Hub</strong>
+                                </h5>
+                                <p>All files for this project are available on Github.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="message-preview">
+                    <a href="take_one.html" target="_blank">
+                        <div class="media">
+                            <span class="pull-left">
+                                <img class="media-object" src="images/ipy.png" width="50px" height="50px" alt="">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="media-heading"><strong>Old Process Book</strong>
+                                </h5>
+                                <p>This contains our data gathering and analysis before we decided to gather new data.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="message-preview">
+                    <a href="IMDB_reviews.html" target="_blank">
+                        <div class="media">
+                            <span class="pull-left">
+                                <img class="media-object" src="images/ipy.png" width="50px" height="50px" alt="">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="media-heading"><strong>Loading IMDB Notebook</strong>
+                                </h5>
+                                <p>This file contains code for loading and organizing Andrew Maas's IMDB data set into a pandas Data Frame.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="message-preview">
+                    <a href="https://github.com/starbro/BeastMode" target="_blank">
+                        <div class="media">
+                            <span class="pull-left">
+                                <img class="media-object" src="images/imdb_icon.png"  width="50px" height="50px" alt="">
+                            </span>
+                            <div class="media-body">
+                                <h5 class="media-heading"><strong>Large Movie Review Data Set</strong>
+                                </h5>
+                                <p>This contains a link to our GitHub Page which has Andrew Maas's IMDB data set.</p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+              <li class="active">
+                  <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Overview</a>
+              </li>
+              <li>
+                  <a href="methods.html"><i class="fa fa-fw fa-table"></i> Methods</a>
+              </li>
+              <li>
+                  <a href="results.html"><i class="fa fa-fw fa-bar-chart-o"></i> Results</a>
+              </li>
+              <li>
+                <img src="images/mo.png" width=150% height="400px" >
+              <li>
+          </ul>
+      </div>
+    </nav>
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            Blockbuster or Bust: <small>Using Text Sentiment Analysis to Predict Box Office Success</small>
+                        </h1>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-stack-overflow fa-4x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">Jess</div>
+                                        <div class="last-name">Li</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-mortar-board fa-4x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge" font-size=".8em">Alpkaan</div>
+                                        <div class="last-name">Celik</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-yellow">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-power-off fa-4x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">Jason</div>
+                                        <div class="last-name">Dong</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-red">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-coffee fa-3x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div class="huge">Stephen</div>
+                                        <div class="last-name">Albro</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <video src="ThankHarvard.mov" class="col-lg-12" controls width="75%"
+                     height="75%" margin-bottom="50px"></video>
+                </div>
+                <!-- /.row -->
+                <br>
+
+                <div class="row">
+                  <div class=col-lg-12>
+                    <h1 id="override-blue"> Background and Motivation </h1>
+                    <div class="well">
+                    Social media and entertainment are such pervasive parts of millennials' lives. We want to study the intersection of these two. Is it possible to predict box office success of movies through sentiments expressed on social media? Stay tuned for more!
+                    </div>
+                    <h1 id="override-green"> Abstract </h1>
+                    <div class="well">
+                      <p>Our overall scientific goal is to be able to do sentiment analysis on text, and see if we are able to predict box office successes from our analysis.
+                      </p>
+                      <p> In general, we will use text-sentiment analysis to measure the positivity of the online reviews for each film in our data set. Afterwards, we will use these results to predict their success in the box office, as measured by opening gross income, the amount of money a movie makes in its opening weekend. </p>
+                      <p> If our analysis proves to be correct, our findings can help production companies predict the performance of their film from the responses of critics at an early stage. Likewise, if these firms can measure the audiences’ responses to trailers/teasers, they can use this knowledge to alter their marketing efforts and achieve better financial results. Moreover, theaters can also potentially use this analysis to determine when they should pull a movie from cinemas.</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container-fluid -->
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+</body>
+
+</html>
