@@ -2,8 +2,8 @@
 
 Welcome to the CS109 final project for Stephen Albro, Alpkaan Celik, Jason Dong and Jessica Li! <br><br>
 
-Access our website here - [Blockbuster or Bust](http://google.com) <br>
-Access our screencast video here - [Blockbuster or Bust Video](http://google.com)
+Access our website here - [Blockbuster or Bust](http://starbro.github.io/BeastMode/) <br>
+Access our video here: http://starbro.github.io/BeastMode/.
 
 ## Getting started
 
