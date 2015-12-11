@@ -19,10 +19,10 @@ Because of our large dataset, alot of the code in the process book can take a lo
 * [newBOM.json](./newBOM.json) contains the box office data we scrape from [Box_Office_Mojo](http://www.boxofficemojo.com)
 * [complete_valence.json](https://www.dropbox.com/s/xxiojklc9coakkx/complete_valence.json?dl=0) contains the scraped IMDB review data merged with valence values and box office data
 * [dftouse.json](https://www.dropbox.com/s/ieu8sbn1c4eo2bv/dftouse.json?dl=0) is the complete_valence.json data adjusted for inflation
-* [review_parts.json](./review_parts.json) contains the parts of text after natural language processing
+* [review_parts.json](https://www.dropbox.com/s/1hnm9wbyhuiur1z/review_parts.json?dl=0) contains the parts of text after natural language processing
 * [vocab_unique.json](./vocab_unique.json) is a preliminary list of unique nouns
 * [vocab_unique_2.json](./vocab_unique_2.json) is a truly unique list of nouns
-* [corpus.json](./corpus.json) is the corpus for LDA
+* [corpus.json](https://www.dropbox.com/s/3z3bpbujcq60ate/corpus.json?dl=0) is the corpus for LDA
 * [adj_unique.json](./adj_unique.json) is a preliminary list of unique adjectives
 * [adj_unique_2.json](./adj_unique_2.json) is a truly unique list of adjectives
 * [Xarray.json](./Xarray.json) is the Xarray used for sentiment analysis
